@@ -4,6 +4,9 @@
 /dist
 /tmp
 
+#environment vars
+.env
+
 # dependencies
 /node_modules
 
