@@ -1,0 +1,11 @@
+{
+	"name": "Herokudos",
+ 	"description": "A todo application using postgres and SLDS",
+ 	"repository": "https://github.com/adamSellers/herokudos.git",
+ 	"logo": "http://node-js-sample.herokuapp.com/node.svg",
+ 	"keywords": ["node", "express", "postgres"],
+	"image": "heroku/nodejs",
+ 	"addons": [
+ 		"heroku-postgresql"
+ 	]
+}
