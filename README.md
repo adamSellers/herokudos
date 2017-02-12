@@ -16,6 +16,9 @@ It's a simple Todo app with a Heroku postgres backend and the lightning design s
 
 it will then be up on localhost:3000
 
-## other stuff soon.. 
+## or just do this.. 
 
+<a href="https://heroku.com/deploy?template=https://github.com/adamSellers/herokudos.git">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 
