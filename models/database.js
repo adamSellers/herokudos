@@ -7,7 +7,7 @@ client.connect();
 
 const query = client.query(
 
-	'CREATE TABLE IF NOT EXISTS items(id SERIAL PRIMARY KEY, todo VARCHAR(40) not null, iscomplete BOOLEAN)'
+	'CREATE TABLE IF NOT EXISTS items(id SERIAL PRIMARY KEY, todo VARCHAR(400) not null, iscomplete BOOLEAN)'
 	);
 
 query.on('end', () => {
