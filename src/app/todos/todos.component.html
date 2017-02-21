@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="slds-large-size--8-of-12 slds-large-size--4-of-6">
+        <div class="slds-large-size--8-of-12 slds-medium-size--4-of-6">
           <span [class]="(todo.isEditMode ? 'slds-hide' : 'slds-show')">
             {{todo.todo}}
           </span>
@@ -63,7 +63,7 @@
             <button class="slds-button slds-button--destructive" (click)="setEditState(todo, false)">Cancel</button>
           </div>
         </div>
-        <div class="slds-large-size--2-of-12 slds-large-size--1-of-12">
+        <div class="slds-large-size--2-of-12 slds-medium-size--1-of-12">
           <button class="slds-button slds-button--icon-border" (click)="deleteTodo(todo)" aria-live="assertive" title="Delete">
             <svg class="slds-button__icon" aria-hidden="true">
               <use xlink:href="/css/icons/action-sprite/svg/symbols.svg#delete"></use>
