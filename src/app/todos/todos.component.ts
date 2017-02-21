@@ -13,7 +13,7 @@ export class TodosComponent implements OnInit {
 	todo: Todo[];
 
 	//***properties for modals***//
-	opened: boolean = false;
+	  opened: boolean = false;
   	size: string;
   	noHeader: boolean = false;
   	noFooter: boolean = false;
