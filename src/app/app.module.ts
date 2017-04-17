@@ -19,7 +19,9 @@ import { TodosComponent } from './todos/todos.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    NglModule.forRoot()
+    NglModule.forRoot({
+      svgPath: '/css/icons'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
