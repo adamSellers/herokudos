@@ -38,8 +38,8 @@
     </div>    
   </div>
   <!-- *********** loop through all the todos here ************** -->
-  <div class="slds-grid" *ngFor="let todo of todos">
-    <div class="slds-card-body slds-box slds-m-around--small slds-theme--default">
+  <div *ngFor="let todo of todos">
+    <div class="slds-card-body slds-grid slds-box slds-m-around--small slds-theme--default">
       <div class="slds-grid slds-wrap slds-grid--pull-padded">
         <div class="slds-large-size--2-of-12 slds-medium-size--1-of-6">
           <div class="slds-form-element">
