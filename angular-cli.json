@@ -22,12 +22,12 @@
         "../node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css"
       ],
       "scripts": [],
-      "environments": {
-        "source": "environments/environment.ts",
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "environmentSource": "environments/environment.ts",
+        "environments": {
+          "dev": "environments/environment.ts",
+          "prod": "environments/environment.prod.ts"
+        }
       }
-    }
   ],
   "e2e": {
     "protractor": {

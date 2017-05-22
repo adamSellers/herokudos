@@ -8,7 +8,7 @@ const connectionString = process.env.DATABASE_URL;
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
   res.sendFile('index.html');
 });
 
@@ -72,12 +72,12 @@ router.get('/api/v1/todos', function(req, res, next) {
 
 //UPDATE a single todo
 router.put('/api/v1/todos/:id', function(req, res, next) {
-	
+
 	const results = [];
 	//grab the id from the URL parameters
-	
+
 	const id = req.params.id
-	
+
 	//grab the data from the http request
 	const data = {todo: req.body.todo, iscomplete: req.body.iscomplete};
 

@@ -35,26 +35,26 @@
             <button class="slds-button slds-button--brand" (click)="addTodo($event, todoText)">Save</button>
           </template>
       </ngl-modal>
-    </div>    
+    </div>
   </div>
   <!-- *********** loop through all the todos here ************** -->
   <div *ngFor="let todo of todos">
-    <div class="slds-card-body slds-grid slds-box slds-m-around--small slds-theme--default">
+    <div class="slds-card-body slds-box slds-m-around--small slds-theme--default">
       <div class="slds-grid slds-wrap slds-grid--pull-padded">
-        <div class="slds-large-size--2-of-12 slds-medium-size--1-of-6">
+        <div class="slds-large-size--2-of-12 slds-medium-size--1-of-6 slds-small-size--1-of-4">
           <div class="slds-form-element">
             <div class="slds-form-element__control">
               <span class="slds-checkbox">
                 <input type="checkbox" name="options" id="{{todo.id}}" [checked]="todo.iscomplete" (click)="updateStatus(todo)" />
                 <label class="slds-checkbox__label" for="{{todo.id}}">
                   <span class="slds-checkbox--faux"></span>
-                  <span class="slds-form-element__label">Completed?</span>
+                  <span class="slds-form-element__label">Done?</span>
                 </label>
               </span>
             </div>
           </div>
         </div>
-        <div class="slds-large-size--8-of-12 slds-medium-size--4-of-6">
+        <div class="slds-large-size--8-of-12 slds-medium-size--4-of-6 slds-small-size--2-of-4">
           <span [class]="(todo.isEditMode ? 'slds-hide' : 'slds-show')">
             {{todo.todo}}
           </span>
@@ -63,7 +63,7 @@
             <button class="slds-button slds-button--destructive" (click)="setEditState(todo, false)">Cancel</button>
           </div>
         </div>
-        <div class="slds-large-size--2-of-12 slds-medium-size--1-of-12">
+        <div class="slds-large-size--2-of-12 slds-medium-size--1-of-6 slds-small-size--1-of-4 slds-align--absolute-center">
           <button class="slds-button slds-button--icon-border" (click)="deleteTodo(todo)" aria-live="assertive" title="Delete">
             <svg class="slds-button__icon" aria-hidden="true">
               <use xlink:href="/css/icons/action-sprite/svg/symbols.svg#delete"></use>
