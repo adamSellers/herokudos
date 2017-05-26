@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  clientId: '3MVG99OxTyEMCQ3hOlBA5DfdQnGKboYqczDJzs8AufuPRLmtJPeOO0.BdrB6QsLB89AOnxfhtcZkC2vobEFgT',
+  communityURL: 'https://sdo-134f326f986sdo-134f326f986.force.com',
+  redirectURL: 'http://localhost:3000/callback'
+
 };

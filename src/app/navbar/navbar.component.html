@@ -1,8 +1,9 @@
 <div class="slds-context-bar">
   <div class="slds-context-bar__primary slds-context-bar__item--divider-right">
-    <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--click slds-no-hover">
-      <div class="slds-context-bar__icon-action">
-        <a href="javascript:void(0);" class="slds-icon-waffle_container slds-context-bar__button">
+    <div
+      class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--click slds-no-hover">
+      <div class="slds-context-bar__icon-action ">
+        <div class="slds-icon-waffle_container slds-context-bar__button slds-align--absolute-center">
           <div class="slds-icon-waffle">
             <div class="slds-r1"></div>
             <div class="slds-r2"></div>
@@ -14,12 +15,32 @@
             <div class="slds-r8"></div>
             <div class="slds-r9"></div>
           </div>
-          <span class="slds-assistive-text">Open App Launcher</span>
-        </a>
+        </div>
       </div>
       <span class="slds-context-bar__label-action slds-context-bar__app-name">
         <span class="slds-truncate" title="Herokudos">Herokudos</span>
       </span>
     </div>
   </div>
+  <div class="slds-context-bar__secondary">
+    <ul class="slds-grid">
+      <li class="slds-context-bar__item">
+        <a routerLink="/" class="slds-context-bar__label-action" title="Home">
+          <span class="slds-truncate" title="Home">Home</span>
+        </a>
+      </li>
+      <li class="slds-context-bar__item">
+        <a routerLink="/about" class="slds-context-bar__label-action" title="Home">
+          <span class="slds-truncate" title="About">About</span>
+        </a>
+      </li>
+      <li class="slds-context-bar__item">
+        <a routerLink="/callback" class="slds-context-bar__label-action" title="Home">
+          <span class="slds-truncate" title="callback">callback</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="slds-float_right slds-align--absolute-center slds-button slds-button--brand slds-m-right--large"
+       id="salesforce-login">Login</div>
 </div>

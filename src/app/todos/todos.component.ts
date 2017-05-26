@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoService } from '../todo.service';
-import { Todo } from '../Todo';
+import { TodoService } from '../providers/todo.service';
+import { Todo } from '../models/Todo';
 
 @Component({
   selector: 'app-todos',
@@ -30,7 +30,7 @@ export class TodosComponent implements OnInit {
   		.subscribe(todos => {
   			this.todos = todos;
   		});
-  
+
   }
 
   	open(size?: string) {
