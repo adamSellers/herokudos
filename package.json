@@ -9,8 +9,7 @@
     "lint": "tslint \"src/**/*.ts\" --project src/tsconfig.json --type-check && tslint \"e2e/**/*.ts\" --project e2e/tsconfig.json --type-check",
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
-    "e2e": "protractor",
-    "postinstall": "node ./models/database.js && ng build --aot -prod"
+    "e2e": "protractor"
   },
   "private": true,
   "engines": {
@@ -22,7 +21,6 @@
     "@angular/cli": "1.1.3",
     "@angular/common": "4.2.4",
     "@angular/compiler": "4.2.4",
-    "@angular/compiler-cli": "4.1.3",
     "@angular/core": "4.2.4",
     "@angular/forms": "4.2.4",
     "@angular/http": "4.2.4",
@@ -31,6 +29,7 @@
     "@angular/platform-server": "4.2.4",
     "@angular/router": "4.2.4",
     "@salesforce-ux/design-system": "^2.3.1",
+    "angular-cli": "1.0.0-beta.28.3",
     "body-parser": "~1.17.2",
     "cookie-parser": "~1.4.3",
     "core-js": "^2.4.1",
@@ -44,7 +43,6 @@
     "rxjs": "^5.4.1",
     "serve-favicon": "~2.4.3",
     "ts-helpers": "^1.1.2",
-    "typescript": "2.3.2",
     "zone.js": "0.8.12"
   },
   "devDependencies": {
