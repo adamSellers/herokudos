@@ -80,7 +80,7 @@ export class AppComponent implements OnInit {
 
   onLogin(identity) {
 
-    console.log(JSON.stringify(identity));
+    console.log('fired from the app component');
 
   }
 

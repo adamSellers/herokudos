@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Meta} from '@angular/platform-browser';
 import {environment} from '../../../environments/environment';
+import { Router } from '@angular/router';
+
 
 
 declare var SFIDWidget: any;
@@ -15,7 +17,7 @@ declare var SFIDWidget_logoutHandler: any;
 })
 export class CallbackComponent implements OnInit {
 
-  constructor(public meta:Meta) { }
+  constructor(public meta:Meta, public router: Router) { }
 
   ngOnInit() {
 
@@ -59,6 +61,14 @@ export class CallbackComponent implements OnInit {
           content: "onLogout"
         }
       ], true);
+
+    this.router.navigateByUrl('');
+
+  }
+
+  onLogin(){
+
+    console.log('fired from the callback component');
 
   }
 
