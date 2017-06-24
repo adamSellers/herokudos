@@ -29,10 +29,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/css', express.static(__dirname + '/node_modules/@salesforce-ux/design-system/assets/'))
+app.use('/css', express.static(__dirname + '/node_modules/@salesforce-ux/design-system/assets/'));
 
 app.use('/', index);
 //app.use('/users', users);
+
+app.use('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname + '/dist/index.html'));
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

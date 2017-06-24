@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+.sfid-button {
+
+  padding: 5px 12px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  border-radius: 8px !important;
+
+}

@@ -1,19 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const dotenv = require('dotenv').config();
 const pg = require('pg');
 pg.defaults.ssl = true;
 const path = require('path');
 const connectionString = process.env.DATABASE_URL;
 
 
-/* GET home page. */
-router.get('/', function(req, res) {
-  res.sendFile('index.html');
-});
-
-
-//adding the routes - first the CREATE
+//adding the todo routes - first the CREATE
 router.post('/api/v1/todos', function(req, res, next){
 	const results = [];
 	//get the data from http request
@@ -139,6 +132,11 @@ router.delete('/api/v1/todos/:id', function(req, res, next) {
 			return res.json(results);
 		});
 	});
+});
+
+/* GET home page and other routes. */
+router.get('/', function(req, res) {
+  res.sendFile('index.html');
 });
 
 module.exports = router;

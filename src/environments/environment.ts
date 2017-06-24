@@ -5,8 +5,8 @@
 
 export const environment = {
   production: false,
-  clientId: '3MVG99OxTyEMCQ3hOlBA5DfdQnGKboYqczDJzs8AufuPRLmtJPeOO0.BdrB6QsLB89AOnxfhtcZkC2vobEFgT',
-  communityURL: 'https://sdo-134f326f986sdo-134f326f986.force.com',
-  redirectURL: 'http://localhost:3000/callback'
+  clientId: '3MVG9ZL0ppGP5UrD_6s2uriohOrG4klk1t6E9nZ7PcKoNjyeme7fwjQhKapgiiZH5tTGpG856FzCZsS2Gwekg',
+  communityURL: 'https://sdodemo-main-15355d5525b.force.com/audiophiles',
+  redirectURL: 'http://localhost:3000/'
 
 };

@@ -6,9 +6,8 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-import { TodosComponent } from './todos/todos.component';
-import { AboutComponent } from './about/about.component';
-import { CallbackComponent } from './callback/callback.component';
+import { TodosComponent } from './pages/todos/todos.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const appRoutes: Routes = [
 
@@ -19,10 +18,6 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
-  },
-  {
-    path: 'callback',
-    component: CallbackComponent
   }
 
 ];

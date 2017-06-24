@@ -7,10 +7,9 @@ import { routing } from './app.routing';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { TodosComponent } from './todos/todos.component';
-import { AboutComponent } from './about/about.component';
-import { CallbackComponent } from './callback/callback.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { TodosComponent } from './pages/todos/todos.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { CallbackComponent } from './callback/callback.component';
     NavbarComponent,
     TodosComponent,
     TodosComponent,
-    AboutComponent,
-    CallbackComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
