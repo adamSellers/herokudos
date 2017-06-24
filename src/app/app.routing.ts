@@ -6,8 +6,10 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-import { TodosComponent } from './pages/todos/todos.component';
-import { AboutComponent } from './pages/about/about.component';
+import { TodosComponent } from './components/todos/todos.component';
+import { AboutComponent } from './components/about/about.component';
+import { CallbackComponent } from './components/callback/callback.component';
+
 
 const appRoutes: Routes = [
 
@@ -18,8 +20,11 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'callback',
+    component: CallbackComponent
   }
-
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

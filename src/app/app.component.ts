@@ -78,11 +78,19 @@ export class AppComponent implements OnInit {
     }
   }
 
-  onLogin() {
+  onLogin(identity) {
 
-    console.log('the login function fired!');
+    console.log(JSON.stringify(identity));
 
   }
 
 
+  onLogout() {
+
+    SFIDWidget.init();
+  }
+
+
 }
+
+
