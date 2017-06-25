@@ -20,11 +20,6 @@ export class AppComponent implements OnInit {
 
   constructor(public meta: Meta) {
 
-
-  }
-
-  ngOnInit() {
-
     //meta tag stuff
 
     //check for meta tags and add if not exists
@@ -76,6 +71,13 @@ export class AppComponent implements OnInit {
 
       console.log('meta tags exist!');
     }
+
+
+  }
+
+  ngOnInit() {
+
+
   }
 
   onLogin(identity) {
